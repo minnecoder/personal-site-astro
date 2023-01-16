@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import ProjectItem from "../components/ProjectItem.astro";
+import SingleProject from "../components/SingleProject.astro";
 import About from "../components/About.astro";
 import projects from "../projects.json";
 import Contact from "../components/Contact.astro";
@@ -80,7 +80,7 @@ const data = {
       </div>
       <div id="projects">
         <h1>Projects</h1>
-        {projects.map((project) => <ProjectItem props={project} />)}
+        {projects.map((project) => <SingleProject props={project} />)}
       </div>
       <div id="contact">
         <Contact />
