@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Delivery Notes",
+    "description": "Full Stack app for notes on delivery route stops. Application is deployed on Heroku so may take a minute or two to load the first time. ",
+    "img": "del-notes.png",
+    "tech": "React, TypeScript, Node, Express, MongoDB, Mongoose, JWT, ",
+    "github": "https://github.com/minnecoder/delivery-notes-fullstack/",
+    "website": "https://driver-notes.herokuapp.com//#/"
+  },
+  {
+    "id": "2",
+    "name": "Issue Tracker",
+    "description": "Full stack application for tracking issues for multiple projects. Application is deployed on Heroku so may take a minute or two to load the first time.",
+    "img": "issue-tracker.png",
+    "tech": "Node, TypeScript, Express, MongoDB, React",
+    "github": "https://github.com/minnecoder/issue-tracker",
+    "website": "https://issue-tracker-fullstack.herokuapp.com/"
+  },
+  {
+    "id": "3",
+    "name": "Delivery Application API",
+    "description": "API that is used to run multiple applications that would be used for a delivery company. The website that is linked is the documentation",
+    "img": "react-from-scratch.png",
+    "tech": "Node, TypeScript, Express, Sequelize",
+    "github": "https://github.com/minnecoder/delivery-api",
+    "website": "https://express-delivery-api.herokuapp.com/api-docs/"
+  },
+  {
+    "id": "4",
+    "name": "Inventory Application API",
+    "description": "API that is used for the backend of an inventory application. The website that is linked is the documentation",
+    "img": "react-from-scratch.png",
+    "tech": "Node, TypeScript, Express, Sequelize",
+    "github": "https://github.com/minnecoder/inventory-api",
+    "website": "https://inventory-backend-api.herokuapp.com/api-docs/"
+  },
+  {
+    "id": "5",
+    "name": "Frontend Mentor Intro Component with Signup",
+    "description": "Recreation of the Frontend Mentor Intro Component with Signup. Made from the mockup that was provided, images were provided.",
+    "img": "fm-intro.png",
+    "tech": "HTML5, CSS3",
+    "github": "https://github.com/minnecoder/fm-intro-component-with-signup",
+    "website": "https://condescending-wescoff-0eec08.netlify.app/"
+  },
+  {
+    "id": "6",
+    "name": "Frontend Mentor Single Price Card",
+    "description": "Recreation of the Frontend Mentor Single Price Card. Made from the mockup that was provided, images were provided.",
+    "img": "fm-price.png",
+    "tech": "HTML5, CSS3",
+    "github": "https://github.com/minnecoder/fm-single-price-grid",
+    "website": "https://keen-gates-a859aa.netlify.app/"
+  }
+]

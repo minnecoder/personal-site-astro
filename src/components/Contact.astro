@@ -1,0 +1,70 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="main">
+  <h1>Contact Me</h1>
+  <p>
+    Do you like what you have seen and you are interested in working me?
+    {" "}
+    <br />
+    Use one of the links below to get in contact with me.
+  </p>
+  <div class="socialLinks">
+    <a class="socialLink" href="https://twitter.com/minnecoder">
+      <Icon name="mdi:twitter" color="#1da1f2" />
+    </a>
+    <a class="socialLink" href="https://www.linkedin.com/in/seanparkin/">
+      <Icon name="mdi:linkedin" color="#0073b1" />
+    </a>
+    <a class="socialLink" href="https://github.com/minnecoder">
+      <Icon name="mdi:github" color="black" />
+      <a class="socialLink" href="mailto:sdparkin@protonmail.com">
+        <Icon name="mdi:envelope" color="black" />
+      </a>
+    </a>
+  </div>
+  <style>
+    .main {
+      width: 70%;
+      padding: 100px 0;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .main p {
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main h1 {
+      font-size: 30px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .socialLinks {
+      padding: 60px 0;
+      margin: 0 auto;
+    }
+
+    .socialLinks a {
+      padding: 0px 15px;
+    }
+
+    .socialLink {
+      color: white;
+    }
+
+    /* .socialLink:hover {
+      color: #0253b3;
+    } */
+
+    [astro-icon] {
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+</div>

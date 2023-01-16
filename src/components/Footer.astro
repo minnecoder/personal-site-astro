@@ -3,11 +3,26 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+  <p>
+    &copy; {today.getFullYear()} Sean Parkin. All rights reserved.
+  </p>
 </footer>
 <style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
+  footer {
+    height: 8vh;
+    margin: 0;
+    background-color: #0d1b2a;
+    color: white;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+  }
+  footer p {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 20px;
+  }
 </style>

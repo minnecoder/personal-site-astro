@@ -1,0 +1,126 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="container">
+  <div class="aboutText">
+    <h2>About</h2>
+    <p>
+      My name is Sean Parkin, I am full stack developer with a preference for
+      the back end. I enjoy making websites and web applications using
+      JavaScript. I continue to learn new things that are coming out in the
+      industry. I am currently learning all of the things that React and Node
+      has to offer.
+    </p>
+  </div>
+  <div class="skillsSection">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skillsRow">
+        <div class="skill">
+          <Icon name="akar-icons:html-fill" size="4rem" />
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <Icon name="akar-icons:css-fill" size="4rem" />
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <Icon name="akar-icons:javascript-fill" size="4rem" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <Icon name="cib:typescript" size="4rem" />
+          <p>TypeScript</p>
+        </div>
+        <div class="skill">
+          <Icon name="akar-icons:react-fill" size="4rem" />
+          <p>React</p>
+        </div>
+      </div>
+      <div class="skillsRow">
+        <div class="skill">
+          <Icon name="akar-icons:nextjs-fill" size="4rem" />
+          <p>NextJS</p>
+        </div>
+        <div class="skill">
+          <Icon name="simple-icons:mongodb" size="4rem" />
+          <p>MongoDB</p>
+        </div>
+        <div class="skill">
+          <Icon name="simple-icons:swagger" size="4rem" />
+          <p>Swagger</p>
+        </div>
+
+        <div class="skill">
+          <Icon name="akar-icons:node-fill" size="4rem" />
+          <p>NodeJS</p>
+        </div>
+        <div class="skill">
+          <Icon name="simple-icons:express" size="4rem" />
+          <p>Express</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    @import url("https:fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .aboutText {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .aboutText > p {
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+
+  .aboutText > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skillsSection {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1rem;
+    background: #778da9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .skillsSection > h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skillsRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill {
+    margin: 0 3rem;
+    color: #000;
+  }
+
+  .skill > p {
+    text-align: center;
+    color: #000;
+  }
+</style>

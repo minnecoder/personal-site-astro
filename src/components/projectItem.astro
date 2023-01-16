@@ -1,0 +1,76 @@
+---
+interface Props {
+  props: any;
+}
+
+const { props } = Astro.props;
+---
+
+<article>
+  <div class="container">
+    <div class="left">
+      <h3>{props.name}</h3>
+      <p>{props.description}</p>
+      <p>
+        <strong>Technologies Used:</strong>
+        {props.tech}
+      </p>
+      <div class="buttons">
+        <a class="button" href={props.website}>Website</a>
+        <a class="button" href={props.github}>GitHub</a>
+      </div>
+    </div>
+    <div class="right">
+      <img src={props.img} alt="Project" style={{ maxWidth: "100%" }} />
+    </div>
+  </div>
+</article>
+<style>
+  article {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  img {
+    height: 100%;
+    width: 600px;
+  }
+
+  .text {
+    width: 50%;
+    padding: 0 2rem;
+  }
+
+  .text h3 {
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e0e1dd;
+    background: #1b263b;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+</style>

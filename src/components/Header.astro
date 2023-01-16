@@ -4,20 +4,46 @@ import { SITE_TITLE } from "../config";
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-	</nav>
+  <div class="nav">
+    <HeaderLink href="/" class="logolink">{SITE_TITLE}</HeaderLink>
+    <div class="navlinks">
+      <HeaderLink href="/#home" class="navlink">Home</HeaderLink>
+      <HeaderLink href="/#about" class="navlink">About</HeaderLink>
+      <HeaderLink href="/#projects" class="navlink">Projects</HeaderLink>
+      <HeaderLink href="/#contact" class="navlink">Contact</HeaderLink>
+      <HeaderLink href="/blog" class="navlink">Blog</HeaderLink>
+    </div>
+  </div>
 </header>
+
 <style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+    background: #0d1b2a;
+    height: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    margin: 0 1rem;
+  }
+
+  .logolink {
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e1dd;
+  }
+  .navlink {
+    padding: 0 20px;
+    color: #e0e1dd;
+  }
 </style>
