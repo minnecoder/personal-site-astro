@@ -19,4 +19,4 @@ pnpm-debug.log*
 .DS_Store
 
 #hide a page that no one needs to see
-wishlist.astro
+#wishlist.astro
