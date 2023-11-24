@@ -1,7 +1,3 @@
----
-import { Icon } from "astro-icon";
----
-
 <div class="container">
   <div class="aboutText">
     <h2>About</h2>
@@ -16,51 +12,16 @@ import { Icon } from "astro-icon";
   <div class="skillsSection">
     <h2>Skills</h2>
     <div class="skills">
-      <div class="skillsRow">
-        <div class="skill">
-          <Icon name="akar-icons:html-fill" size="4rem" />
-          <p>HTML</p>
-        </div>
-        <div class="skill">
-          <Icon name="akar-icons:css-fill" size="4rem" />
-          <p>CSS</p>
-        </div>
-        <div class="skill">
-          <Icon name="akar-icons:javascript-fill" size="4rem" />
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <Icon name="cib:typescript" size="4rem" />
-          <p>TypeScript</p>
-        </div>
-        <div class="skill">
-          <Icon name="akar-icons:react-fill" size="4rem" />
-          <p>React</p>
-        </div>
-      </div>
-      <div class="skillsRow">
-        <div class="skill">
-          <Icon name="akar-icons:nextjs-fill" size="4rem" />
-          <p>NextJS</p>
-        </div>
-        <div class="skill">
-          <Icon name="simple-icons:mongodb" size="4rem" />
-          <p>MongoDB</p>
-        </div>
-        <div class="skill">
-          <Icon name="simple-icons:swagger" size="4rem" />
-          <p>Swagger</p>
-        </div>
-
-        <div class="skill">
-          <Icon name="akar-icons:node-fill" size="4rem" />
-          <p>NodeJS</p>
-        </div>
-        <div class="skill">
-          <Icon name="simple-icons:express" size="4rem" />
-          <p>Express</p>
-        </div>
-      </div>
+      <p class="skill">HTML</p>
+      <p class="skill">CSS</p>
+      <p class="skill">JavaScript</p>
+      <p class="skill">TypeScript</p>
+      <p class="skill">React</p>
+      <p class="skill">NextJS</p>
+      <p class="skill">MongoDB</p>
+      <p class="skill">Swagger</p>
+      <p class="skill">NodeJS</p>
+      <p class="skill">Express</p>
     </div>
   </div>
 </div>
@@ -68,15 +29,15 @@ import { Icon } from "astro-icon";
 <style>
   .container {
     display: flex;
-    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
     padding: 60px 0;
-    @import url("https:fonts.googleapis.com/css2?family=Montserrat&display=swap");
-    font-family: "Montserrat", sans-serif;
   }
 
   .aboutText {
-    width: 70%;
-    margin: 0 auto;
+    /* width: 70%; */
+    /* margin: 0 auto; */
   }
 
   .aboutText > p {
@@ -91,12 +52,12 @@ import { Icon } from "astro-icon";
   }
 
   .skillsSection {
-    margin: 0 auto;
-    width: 50%;
+    /* margin: 0 auto;
+    width: 50%; */
     padding: 1rem;
-    background: #778da9;
+    /* background: #778da9;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3); */
   }
 
   .skillsSection > h2 {
@@ -119,8 +80,12 @@ import { Icon } from "astro-icon";
     color: #000;
   }
 
-  .skill > p {
+  .skill {
+    background: rgba(153, 153, 153, 0.2);
+    padding: 1rem 2rem;
+    margin: 0 1rem 1rem 0;
     text-align: center;
-    color: #000;
+    color: #666;
+    border-radius: 5px;
   }
 </style>
