@@ -1,0 +1,26 @@
+---
+import data from "../data.json";
+---
+
+<html>
+  <div>
+    <h3>{data.section1.title}</h3>
+    <ul>
+      {data.section1.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+  <div>
+    <h3>{data.section2.title}</h3>
+    <ul>
+      {data.section2.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+
+
+  <style>
+    li {
+      list-style-type: none;
+    }
+  </style>
+</html>
