@@ -7,17 +7,6 @@ import About from "../components/About.astro";
 import projects from "../projects.json";
 import Contact from "../components/Contact.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-
-const data = {
-  id: 1,
-  name: "Delivery Notes",
-  description:
-    "Full Stack app for notes on delivery route stops. Application is deployed on Heroku so may take a minute or two to load the first time. ",
-  img: "del-notes.png",
-  tech: "React, TypeScript, Node, Express, MongoDB, Mongoose, JWT, ",
-  github: "https://github.com/minnecoder/delivery-notes-fullstack/",
-  website: "https://driver-notes.herokuapp.com//#/",
-};
 ---
 
 <!DOCTYPE html>
@@ -49,6 +38,14 @@ const data = {
         color: #fff;
         text-align: center;
       }
+      #home a {
+        background: #3997fc;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+      }
       #about {
         padding: 2rem 0;
         height: 100vh;
@@ -74,6 +71,7 @@ const data = {
           <br />
           I build Full Stack apps
         </h1>
+        <a href="/#projects">Projects</a>
       </div>
       <div id="about">
         <About />
