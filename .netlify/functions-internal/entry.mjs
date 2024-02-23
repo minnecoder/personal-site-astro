@@ -1,8 +1,8 @@
 import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import { escape } from 'html-escaper';
 /* empty css                                 *//* empty css                                 */import { optimize } from 'svgo';
-import rss from '@astrojs/rss';
-/* empty css                                 *//* empty css                                */import 'mime';
+/* empty css                                    */import rss from '@astrojs/rss';
+/* empty css                                 */import 'mime';
 import 'cookie';
 import 'kleur/colors';
 import 'string-width';
@@ -1663,17 +1663,6 @@ async function* maybeRenderHead(result) {
 
 typeof process === "object" && Object.prototype.toString.call(process) === "[object process]";
 
-function __astro_tag_component__(Component, rendererName) {
-  if (!Component)
-    return;
-  if (typeof Component !== "function")
-    return;
-  Object.defineProperty(Component, Renderer, {
-    value: rendererName,
-    enumerable: false,
-    writable: false
-  });
-}
 function spreadAttributes(values, _name, { class: scopedClassName } = {}) {
   let output = "";
   if (scopedClassName) {
@@ -1798,7 +1787,7 @@ var server_default = {
   renderToStaticMarkup
 };
 
-const $$Astro$d = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/BaseHead.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$d = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/BaseHead.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$BaseHead = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$BaseHead;
@@ -1831,83 +1820,205 @@ const $$BaseHead = createComponent(async ($$result, $$props, $$slots) => {
 <meta property="twitter:description"${addAttribute(description, "content")}>
 <meta property="twitter:image"${addAttribute(new URL(image, Astro2.url), "content")}>
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/BaseHead.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/BaseHead.astro");
 
-const $$Astro$c = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Footer.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$c = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/Footer.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Footer;
   const today = new Date();
-  return renderTemplate`${maybeRenderHead($$result)}<footer class="astro-TXABNNL3">
-  <p class="astro-TXABNNL3">
+  return renderTemplate`${maybeRenderHead($$result)}<footer class="astro-R5BEUT5D">
+  <p class="astro-R5BEUT5D">
     &copy; ${today.getFullYear()} Sean Parkin. All rights reserved.
   </p>
 </footer>
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Footer.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/Footer.astro");
 
-const $$Astro$b = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/HeaderLink.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$b = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/HeaderLink.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$HeaderLink = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$HeaderLink;
   const { href, class: className, ...props } = Astro2.props;
   const { pathname } = Astro2.url;
   const isActive = href === pathname || href === pathname.replace(/\/$/, "");
-  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(href, "href")}${addAttribute([[className, { active: isActive }], "astro-M4AYEFYF"], "class:list")}${spreadAttributes(props)}>
+  return renderTemplate`${maybeRenderHead($$result)}<a${addAttribute(href, "href")}${addAttribute([[className, { active: isActive }], "astro-6IKCNWDB"], "class:list")}${spreadAttributes(props)}>
 	${renderSlot($$result, $$slots["default"])}
 </a>
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/HeaderLink.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/HeaderLink.astro");
 
 const SITE_TITLE = "Sean Parkin";
 const SITE_DESCRIPTION = "Welcome to my website!";
 
-const $$Astro$a = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Header.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$a = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/Header.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Header;
-  return renderTemplate`${maybeRenderHead($$result)}<header class="astro-5KRYLIOI">
-  <div class="nav astro-5KRYLIOI">
-    ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/", "class": "logolink astro-5KRYLIOI" }, { "default": () => renderTemplate`${SITE_TITLE}` })}
-    <div class="navlinks astro-5KRYLIOI">
-      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#home", "class": "navlink astro-5KRYLIOI" }, { "default": () => renderTemplate`Home` })}
-      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#about", "class": "navlink astro-5KRYLIOI" }, { "default": () => renderTemplate`About` })}
-      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#projects", "class": "navlink astro-5KRYLIOI" }, { "default": () => renderTemplate`Projects` })}
-      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#contact", "class": "navlink astro-5KRYLIOI" }, { "default": () => renderTemplate`Contact` })}
-      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/blog", "class": "navlink astro-5KRYLIOI" }, { "default": () => renderTemplate`Blog` })}
+  return renderTemplate`${maybeRenderHead($$result)}<header class="astro-EII6OA66">
+  <div class="nav astro-EII6OA66">
+    ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/", "class": "logolink astro-EII6OA66" }, { "default": () => renderTemplate`${SITE_TITLE}` })}
+    <div class="navlinks astro-EII6OA66">
+      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#home", "class": "navlink astro-EII6OA66" }, { "default": () => renderTemplate`Home` })}
+      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#about", "class": "navlink astro-EII6OA66" }, { "default": () => renderTemplate`About` })}
+      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#projects", "class": "navlink astro-EII6OA66" }, { "default": () => renderTemplate`Projects` })}
+      ${renderComponent($$result, "HeaderLink", $$HeaderLink, { "href": "/#contact", "class": "navlink astro-EII6OA66" }, { "default": () => renderTemplate`Contact` })}
     </div>
   </div>
 </header>
 
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Header.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/Header.astro");
 
-const $$Astro$9 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/ProjectItem.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
-const $$ProjectItem = createComponent(async ($$result, $$props, $$slots) => {
+const $$Astro$9 = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/SingleProject.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
+const $$SingleProject = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
-  Astro2.self = $$ProjectItem;
+  Astro2.self = $$SingleProject;
   const { props } = Astro2.props;
-  return renderTemplate`${maybeRenderHead($$result)}<article class="astro-FDL4J5XN">
-  <div class="container astro-FDL4J5XN">
-    <div class="left astro-FDL4J5XN">
-      <h3 class="astro-FDL4J5XN">${props.name}</h3>
-      <p class="astro-FDL4J5XN">${props.description}</p>
-      <p class="astro-FDL4J5XN">
-        <strong class="astro-FDL4J5XN">Technologies Used:</strong>
-        ${props.tech}
-      </p>
-      <div class="buttons astro-FDL4J5XN">
-        <a class="button astro-FDL4J5XN"${addAttribute(props.website, "href")}>Website</a>
-        <a class="button astro-FDL4J5XN"${addAttribute(props.github, "href")}>GitHub</a>
+  return renderTemplate`${maybeRenderHead($$result)}<article class="astro-JXIINLWF">
+  <div class="container astro-JXIINLWF">
+    <div class="left astro-JXIINLWF">
+      <h3 class="astro-JXIINLWF">${props.name}</h3>
+      <p class="text astro-JXIINLWF">${props.description}</p>
+      <div class="projectTech astro-JXIINLWF">
+        ${props.tech.map((item) => renderTemplate`<p class="techItem astro-JXIINLWF">${item}</p>`)}
+      </div>
+      <div class="buttons astro-JXIINLWF">
+        <a class="button astro-JXIINLWF"${addAttribute(props.website, "href")}>Website</a>
+        <a class="button astro-JXIINLWF"${addAttribute(props.github, "href")}>GitHub</a>
       </div>
     </div>
-    <div class="right astro-FDL4J5XN">
-      <img${addAttribute(props.img, "src")} alt="Project"${addAttribute({ maxWidth: "100%" }, "style")} class="astro-FDL4J5XN">
+    <div class="right astro-JXIINLWF">
+      <img${addAttribute(props.img, "src")} alt="Project"${addAttribute({ maxWidth: "100%" }, "style")} class="astro-JXIINLWF">
     </div>
   </div>
 </article>
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/ProjectItem.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/SingleProject.astro");
+
+const $$Astro$8 = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/About.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
+const $$About = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  Astro2.self = $$About;
+  return renderTemplate`${maybeRenderHead($$result)}<div class="container astro-RBDZ6M5P">
+  <div class="aboutText astro-RBDZ6M5P">
+    <h3 class="astro-RBDZ6M5P">A little about me</h3>
+    <p class="astro-RBDZ6M5P">
+      My name is Sean Parkin, I am full stack developer with a preference for
+      the back end. I enjoy making websites and web applications using
+      JavaScript. I continue to learn new things that are coming out in the
+      industry. I am currently learning all of the things that React and Node
+      has to offer.
+    </p>
+  </div>
+  <div class="skillsSection astro-RBDZ6M5P">
+    <h2 class="astro-RBDZ6M5P">My Skills</h2>
+    <div class="skills astro-RBDZ6M5P">
+      <p class="skill astro-RBDZ6M5P">HTML</p>
+      <p class="skill astro-RBDZ6M5P">CSS</p>
+      <p class="skill astro-RBDZ6M5P">JavaScript</p>
+      <p class="skill astro-RBDZ6M5P">TypeScript</p>
+      <p class="skill astro-RBDZ6M5P">Github</p>
+      <p class="skill astro-RBDZ6M5P">React</p>
+      <p class="skill astro-RBDZ6M5P">NextJS</p>
+      <p class="skill astro-RBDZ6M5P">Sveltekit</p>
+      <p class="skill astro-RBDZ6M5P">MongoDB</p>
+      <p class="skill astro-RBDZ6M5P">Swagger</p>
+      <p class="skill astro-RBDZ6M5P">NodeJS</p>
+      <p class="skill astro-RBDZ6M5P">Express</p>
+    </div>
+  </div>
+</div>
+
+`;
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/About.astro");
+
+const projects = [
+	{
+		id: "1",
+		name: "Delivery Notes",
+		description: "Full Stack app for notes on delivery route stops. Application is deployed on Heroku, so it may take a minute or two to load the first time. ",
+		img: "del-notes.png",
+		tech: [
+			"React",
+			"TypeScript",
+			"Node",
+			"Express",
+			"MongoDB",
+			"Mongoose",
+			"JWT"
+		],
+		github: "https://github.com/minnecoder/delivery-notes-fullstack/",
+		website: "https://driver-notes.herokuapp.com//#/"
+	},
+	{
+		id: "2",
+		name: "Issue Tracker",
+		description: "Full stack application for tracking issues for multiple projects. Application is deployed on Heroku, so it may take a minute or two to load the first time.",
+		img: "issue-tracker.png",
+		tech: [
+			"Node",
+			"TypeScript",
+			"Express",
+			"MongoDB",
+			"React"
+		],
+		github: "https://github.com/minnecoder/issue-tracker",
+		website: "https://issue-tracker-fullstack.herokuapp.com/"
+	},
+	{
+		id: "3",
+		name: "Delivery Application API",
+		description: "API that is used to run multiple applications that would be used for a delivery company. The website that is linked is the documentation",
+		img: "react-from-scratch.png",
+		tech: [
+			"Node",
+			"TypeScript",
+			"Express",
+			"Sequelize"
+		],
+		github: "https://github.com/minnecoder/delivery-api",
+		website: "https://express-delivery-api.herokuapp.com/api-docs/"
+	},
+	{
+		id: "4",
+		name: "Inventory Application API",
+		description: "API that is used for the backend of an inventory application. The website that is linked is the documentation",
+		img: "react-from-scratch.png",
+		tech: [
+			"Node",
+			"TypeScript",
+			"Express",
+			"Sequelize"
+		],
+		github: "https://github.com/minnecoder/inventory-api",
+		website: "https://inventory-backend-api.herokuapp.com/api-docs/"
+	},
+	{
+		id: "5",
+		name: "Frontend Mentor Intro Component with Signup",
+		description: "Recreation of the Frontend Mentor Intro Component with Signup. Made from the mockup that was provided, images were provided.",
+		img: "fm-intro.png",
+		tech: [
+			"HTML5",
+			"CSS3"
+		],
+		github: "https://github.com/minnecoder/fm-intro-component-with-signup",
+		website: "https://condescending-wescoff-0eec08.netlify.app/"
+	},
+	{
+		id: "6",
+		name: "Frontend Mentor Single Price Card",
+		description: "Recreation of the Frontend Mentor Single Price Card. Made from the mockup that was provided, images were provided.",
+		img: "fm-price.png",
+		tech: [
+			"HTML5",
+			"CSS3"
+		],
+		github: "https://github.com/minnecoder/fm-single-price-grid",
+		website: "https://keen-gates-a859aa.netlify.app/"
+	}
+];
 
 const SPRITESHEET_NAMESPACE = `astroicon`;
 
@@ -2121,9 +2232,9 @@ ${contents}`
   };
 }
 
-const $$Astro$8 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Icon.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$7 = createAstro("C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Icon.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Icon = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$Icon;
   let { name, pack, title, optimize = true, class: className, ...inputProps } = Astro2.props;
   let props = {};
@@ -2142,7 +2253,7 @@ ${e}`);
     }
   }
   return renderTemplate`${maybeRenderHead($$result)}<svg${spreadAttributes(props)}${addAttribute(name, "astro-icon")}>${unescapeHTML((title ? `<title>${title}</title>` : "") + innerHTML)}</svg>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Icon.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Icon.astro");
 
 const sprites = /* @__PURE__ */ new WeakMap();
 function trackSprite(request, name) {
@@ -2168,9 +2279,9 @@ async function getUsedSprites(request) {
   return [];
 }
 
-const $$Astro$7 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Spritesheet.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$6 = createAstro("C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Spritesheet.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Spritesheet = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Spritesheet;
   const { optimize = true, style, ...props } = Astro2.props;
   const names = await getUsedSprites(Astro2.request);
@@ -2185,21 +2296,21 @@ ${e}`);
   return renderTemplate`${maybeRenderHead($$result)}<svg${addAttribute(`position: absolute; width: 0; height: 0; overflow: hidden; ${style ?? ""}`.trim(), "style")}${spreadAttributes({ "aria-hidden": true, ...props })} astro-icon-spritesheet>
     ${icons.map((icon) => renderTemplate`<symbol${spreadAttributes(icon.props)}${addAttribute(`${SPRITESHEET_NAMESPACE}:${icon.name}`, "id")}>${unescapeHTML(icon.innerHTML)}</symbol>`)}
 </svg>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Spritesheet.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Spritesheet.astro");
 
-const $$Astro$6 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/SpriteProvider.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$5 = createAstro("C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/SpriteProvider.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$SpriteProvider = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$SpriteProvider;
   const content = await Astro2.slots.render("default");
   return renderTemplate`${renderComponent($$result, "Fragment", Fragment, {}, { "default": () => renderTemplate`${unescapeHTML(content)}` })}
 ${renderComponent($$result, "Spritesheet", $$Spritesheet, {})}
 `;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/SpriteProvider.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/SpriteProvider.astro");
 
-const $$Astro$5 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Sprite.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$4 = createAstro("C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Sprite.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Sprite = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Sprite;
   let { name, pack, title, class: className, x, y, ...inputProps } = Astro2.props;
   const props = normalizeProps(inputProps);
@@ -2212,210 +2323,156 @@ const $$Sprite = createComponent(async ($$result, $$props, $$slots) => {
     ${title ? renderTemplate`<title>${title}</title>` : ""}
     <use${spreadAttributes({ "xlink:href": href, width: props.width, height: props.height, x, y })}></use>
 </svg>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/node_modules/astro-icon/lib/Sprite.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/node_modules/astro-icon/lib/Sprite.astro");
 
 Object.assign($$Sprite, { Provider: $$SpriteProvider });
 
-const $$Astro$4 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/About.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
-const $$About = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
-  Astro2.self = $$About;
-  return renderTemplate`${maybeRenderHead($$result)}<div class="container astro-PSTI3RBM">
-  <div class="aboutText astro-PSTI3RBM">
-    <h2 class="astro-PSTI3RBM">About</h2>
-    <p class="astro-PSTI3RBM">
-      My name is Sean Parkin, I am full stack developer with a preference for
-      the back end. I enjoy making websites and web applications using
-      JavaScript. I continue to learn new things that are coming out in the
-      industry. I am currently learning all of the things that React and Node
-      has to offer.
-    </p>
-  </div>
-  <div class="skillsSection astro-PSTI3RBM">
-    <h2 class="astro-PSTI3RBM">Skills</h2>
-    <div class="skills astro-PSTI3RBM">
-      <div class="skillsRow astro-PSTI3RBM">
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:html-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">HTML</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:css-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">CSS</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:javascript-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">JavaScript</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "cib:typescript", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">TypeScript</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:react-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">React</p>
-        </div>
-      </div>
-      <div class="skillsRow astro-PSTI3RBM">
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:nextjs-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">NextJS</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "simple-icons:mongodb", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">MongoDB</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "simple-icons:swagger", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">Swagger</p>
-        </div>
-
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "akar-icons:node-fill", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">NodeJS</p>
-        </div>
-        <div class="skill astro-PSTI3RBM">
-          ${renderComponent($$result, "Icon", $$Icon, { "name": "simple-icons:express", "size": "4rem", "class": "astro-PSTI3RBM" })}
-          <p class="astro-PSTI3RBM">Express</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/About.astro");
-
-const projects = [
-	{
-		id: "1",
-		name: "Delivery Notes",
-		description: "Full Stack app for notes on delivery route stops. Application is deployed on Heroku so may take a minute or two to load the first time. ",
-		img: "del-notes.png",
-		tech: "React, TypeScript, Node, Express, MongoDB, Mongoose, JWT, ",
-		github: "https://github.com/minnecoder/delivery-notes-fullstack/",
-		website: "https://driver-notes.herokuapp.com//#/"
-	},
-	{
-		id: "2",
-		name: "Issue Tracker",
-		description: "Full stack application for tracking issues for multiple projects. Application is deployed on Heroku so may take a minute or two to load the first time.",
-		img: "issue-tracker.png",
-		tech: "Node, TypeScript, Express, MongoDB, React",
-		github: "https://github.com/minnecoder/issue-tracker",
-		website: "https://issue-tracker-fullstack.herokuapp.com/"
-	},
-	{
-		id: "3",
-		name: "Delivery Application API",
-		description: "API that is used to run multiple applications that would be used for a delivery company. The website that is linked is the documentation",
-		img: "react-from-scratch.png",
-		tech: "Node, TypeScript, Express, Sequelize",
-		github: "https://github.com/minnecoder/delivery-api",
-		website: "https://express-delivery-api.herokuapp.com/api-docs/"
-	},
-	{
-		id: "4",
-		name: "Inventory Application API",
-		description: "API that is used for the backend of an inventory application. The website that is linked is the documentation",
-		img: "react-from-scratch.png",
-		tech: "Node, TypeScript, Express, Sequelize",
-		github: "https://github.com/minnecoder/inventory-api",
-		website: "https://inventory-backend-api.herokuapp.com/api-docs/"
-	},
-	{
-		id: "5",
-		name: "Frontend Mentor Intro Component with Signup",
-		description: "Recreation of the Frontend Mentor Intro Component with Signup. Made from the mockup that was provided, images were provided.",
-		img: "fm-intro.png",
-		tech: "HTML5, CSS3",
-		github: "https://github.com/minnecoder/fm-intro-component-with-signup",
-		website: "https://condescending-wescoff-0eec08.netlify.app/"
-	},
-	{
-		id: "6",
-		name: "Frontend Mentor Single Price Card",
-		description: "Recreation of the Frontend Mentor Single Price Card. Made from the mockup that was provided, images were provided.",
-		img: "fm-price.png",
-		tech: "HTML5, CSS3",
-		github: "https://github.com/minnecoder/fm-single-price-grid",
-		website: "https://keen-gates-a859aa.netlify.app/"
-	}
-];
-
-const $$Astro$3 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Contact.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$3 = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/components/Contact.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$Contact;
-  return renderTemplate`${maybeRenderHead($$result)}<div class="main astro-BSX4AO7P">
-  <h1 class="astro-BSX4AO7P">Contact Me</h1>
-  <p class="astro-BSX4AO7P">
+  return renderTemplate`${maybeRenderHead($$result)}<div class="main astro-O53JFWBZ">
+  <h1 class="astro-O53JFWBZ">Contact Me</h1>
+  <p class="astro-O53JFWBZ">
     Do you like what you have seen and you are interested in working me?
     ${" "}
-    <br class="astro-BSX4AO7P">
+    <br class="astro-O53JFWBZ">
     Use one of the links below to get in contact with me.
   </p>
-  <div class="socialLinks astro-BSX4AO7P">
-    <a class="socialLink astro-BSX4AO7P" href="https://twitter.com/minnecoder">
-      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:twitter", "color": "#1da1f2", "class": "astro-BSX4AO7P" })}
+  <div class="socialLinks astro-O53JFWBZ">
+    <a class="socialLink astro-O53JFWBZ" href="https://twitter.com/minnecoder">
+      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:twitter", "color": "#1da1f2", "class": "astro-O53JFWBZ" })}
     </a>
-    <a class="socialLink astro-BSX4AO7P" href="https://www.linkedin.com/in/seanparkin/">
-      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:linkedin", "color": "#0073b1", "class": "astro-BSX4AO7P" })}
+    <a class="socialLink astro-O53JFWBZ" href="https://www.linkedin.com/in/seanparkin/">
+      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:linkedin", "color": "#0073b1", "class": "astro-O53JFWBZ" })}
     </a>
-    <a class="socialLink astro-BSX4AO7P" href="https://github.com/minnecoder">
-      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:github", "color": "black", "class": "astro-BSX4AO7P" })}
-      </a><a class="socialLink astro-BSX4AO7P" href="mailto:sdparkin@protonmail.com">
-        ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:envelope", "color": "black", "class": "astro-BSX4AO7P" })}
+    <a class="socialLink astro-O53JFWBZ" href="https://github.com/minnecoder">
+      ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:github", "color": "black", "class": "astro-O53JFWBZ" })}
+      </a><a class="socialLink astro-O53JFWBZ" href="mailto:sdparkin@protonmail.com">
+        ${renderComponent($$result, "Icon", $$Icon, { "name": "mdi:envelope", "color": "black", "class": "astro-O53JFWBZ" })}
       </a>
     
   </div>
   
 </div>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/components/Contact.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/components/Contact.astro");
 
-const $$Astro$2 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/index.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro$2 = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/pages/index.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Index;
-  return renderTemplate`<html lang="en" class="astro-QRP5B2DH">
+  return renderTemplate`<html lang="en" class="astro-3JGOW4JF">
   <head>
-    ${renderComponent($$result, "BaseHead", $$BaseHead, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-QRP5B2DH" })}
+    ${renderComponent($$result, "BaseHead", $$BaseHead, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-3JGOW4JF" })}
     
   ${renderHead($$result)}</head>
 
-  <body class="astro-QRP5B2DH">
-    <main class="astro-QRP5B2DH">
-      ${renderComponent($$result, "Header", $$Header, { "class": "astro-QRP5B2DH" })}
-      <div id="home" class="astro-QRP5B2DH">
-        <h1 class="astro-QRP5B2DH">
+  <body class="astro-3JGOW4JF">
+    <main class="astro-3JGOW4JF">
+      ${renderComponent($$result, "Header", $$Header, { "class": "astro-3JGOW4JF" })}
+      <div id="home" class="astro-3JGOW4JF">
+        <h1 class="astro-3JGOW4JF">
           Hi, my name is Sean Parkin
-          <br class="astro-QRP5B2DH">
+          <br class="astro-3JGOW4JF">
           I build Full Stack apps
         </h1>
+        <a href="/#projects" class="astro-3JGOW4JF">Projects</a>
       </div>
-      <div id="about" class="astro-QRP5B2DH">
-        ${renderComponent($$result, "About", $$About, { "class": "astro-QRP5B2DH" })}
+      <div id="about" class="astro-3JGOW4JF">
+        ${renderComponent($$result, "About", $$About, { "class": "astro-3JGOW4JF" })}
       </div>
-      <div id="projects" class="astro-QRP5B2DH">
-        <h1 class="astro-QRP5B2DH">Projects</h1>
-        ${projects.map((project) => renderTemplate`${renderComponent($$result, "ProjectItem", $$ProjectItem, { "props": project, "class": "astro-QRP5B2DH" })}`)}
+      <div id="projects" class="astro-3JGOW4JF">
+        <h1 class="astro-3JGOW4JF">Projects</h1>
+        ${projects.map((project) => renderTemplate`${renderComponent($$result, "SingleProject", $$SingleProject, { "props": project, "class": "astro-3JGOW4JF" })}`)}
       </div>
-      <div id="contact" class="astro-QRP5B2DH">
-        ${renderComponent($$result, "Contact", $$Contact, { "class": "astro-QRP5B2DH" })}
+      <div id="contact" class="astro-3JGOW4JF">
+        ${renderComponent($$result, "Contact", $$Contact, { "class": "astro-3JGOW4JF" })}
       </div>
     </main>
-    ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-QRP5B2DH" })}
+    ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-3JGOW4JF" })}
   </body></html>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/index.astro");
+}, "C:/Users/sdpar/Code/personal-site-astro/src/pages/index.astro");
 
-const $$file$2 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/index.astro";
-const $$url$2 = "";
+const $$file$1 = "C:/Users/sdpar/Code/personal-site-astro/src/pages/index.astro";
+const $$url$1 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: $$Index,
-  file: $$file$2,
-  url: $$url$2
+  file: $$file$1,
+  url: $$url$1
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const section1 = {
+	title: "Ryobi Power Tools",
+	items: [
+		"ONE+ 18V Cordless Dual Function Inflator/ Deflator",
+		"ONE+ HP 18V Brushless Cordless Compact 6-1/2 in. Circular Saw",
+		"ONE+ HP 18V Brushless Cordless Jig Saw",
+		"ONE+ 18V 18-Gauge Cordless AirStrike Brad Nailer",
+		"ONE+ 18V Cordless 4-1/2 in. Angle Grinder",
+		"ONE+ 18V Cordless Multi-Tool",
+		"ONE+ 18V Cordless 5 in. Random Orbit Sander"
+	]
+};
+const section2 = {
+	title: "Tools",
+	items: [
+		"Miter Saw",
+		"Pressure Washer",
+		"Shop Vac",
+		"Electric Paint Sprayer",
+		"Digital Calipers",
+		"Digital Tape Measure",
+		"Standing Toolbox",
+		"Laser Level",
+		"1/2 inch Impact Socket Sets (Standard and Metric)",
+		"Folding Lock-Back Utility Knife",
+		"Flat Pry Bar",
+		"Pipe Wrench",
+		"Hand Axe",
+		"Sledgehammer"
+	]
+};
+const data = {
+	section1: section1,
+	section2: section2
+};
+
+const $$Astro$1 = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/pages/wishlist.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
+const $$Wishlist = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$Wishlist;
+  return renderTemplate`<html class="astro-UXBPKWHS">
+  ${maybeRenderHead($$result)}<h1 class="astro-UXBPKWHS">Wish List</h1>
+  <div class="astro-UXBPKWHS">
+    <h3 class="astro-UXBPKWHS">${data.section1.title}</h3>
+    <ul class="astro-UXBPKWHS">
+      ${data.section1.items.map((item) => renderTemplate`<li class="astro-UXBPKWHS">${item}</li>`)}
+    </ul>
+  </div>
+  <div class="astro-UXBPKWHS">
+    <h3 class="astro-UXBPKWHS">${data.section2.title}</h3>
+    <ul class="astro-UXBPKWHS">
+      ${data.section2.items.map((item) => renderTemplate`<li class="astro-UXBPKWHS">${item}</li>`)}
+    </ul>
+  </div>
+
+  
+
+
+
+</html>`;
+}, "C:/Users/sdpar/Code/personal-site-astro/src/pages/wishlist.astro");
+
+const $$file = "C:/Users/sdpar/Code/personal-site-astro/src/pages/wishlist.astro";
+const $$url = "/wishlist";
+
+const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Wishlist,
+  file: $$file,
+  url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const get = () =>
@@ -2423,355 +2480,69 @@ const get = () =>
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
 		site: "https://example.com/",
-		items: /* #__PURE__ */ Object.assign({"./blog/first-post.md": () => Promise.resolve().then(() => _page5),"./blog/markdown-style-guide.md": () => Promise.resolve().then(() => _page3),"./blog/second-post.md": () => Promise.resolve().then(() => _page4),"./blog/third-post.md": () => Promise.resolve().then(() => _page6),"./blog/using-mdx.mdx": () => Promise.resolve().then(() => _page7)}),
+		items: /* #__PURE__ */ Object.assign({}),
 	});
 
-const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   get
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro$1 = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/layouts/BlogPost.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
+const $$Astro = createAstro("C:/Users/sdpar/Code/personal-site-astro/src/layouts/BlogPost.astro", "https://example.com/", "file:///C:/Users/sdpar/Code/personal-site-astro/");
 const $$BlogPost = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$BlogPost;
   const {
     content: { title, description, pubDate, updatedDate, heroImage }
   } = Astro2.props;
-  return renderTemplate`<html lang="en" class="astro-CZGL4BJA">
+  return renderTemplate`<html lang="en" class="astro-WXFHOGVK">
 	<head>
-		${renderComponent($$result, "BaseHead", $$BaseHead, { "title": title, "description": description, "class": "astro-CZGL4BJA" })}
+		${renderComponent($$result, "BaseHead", $$BaseHead, { "title": title, "description": description, "class": "astro-WXFHOGVK" })}
 		
 	${renderHead($$result)}</head>
 
-	<body class="astro-CZGL4BJA">
-		${renderComponent($$result, "Header", $$Header, { "class": "astro-CZGL4BJA" })}
-		<main class="astro-CZGL4BJA">
-			<article class="astro-CZGL4BJA">
-				${heroImage && renderTemplate`<img${addAttribute(720, "width")}${addAttribute(360, "height")}${addAttribute(heroImage, "src")} alt="" class="astro-CZGL4BJA">`}
-				<h1 class="title astro-CZGL4BJA">${title}</h1>
-				${pubDate && renderTemplate`<time class="astro-CZGL4BJA">${pubDate}</time>`}
-				${updatedDate && renderTemplate`<div class="astro-CZGL4BJA">
-							Last updated on <time class="astro-CZGL4BJA">${updatedDate}</time>
+	<body class="astro-WXFHOGVK">
+		${renderComponent($$result, "Header", $$Header, { "class": "astro-WXFHOGVK" })}
+		<main class="astro-WXFHOGVK">
+			<article class="astro-WXFHOGVK">
+				${heroImage && renderTemplate`<img${addAttribute(720, "width")}${addAttribute(360, "height")}${addAttribute(heroImage, "src")} alt="" class="astro-WXFHOGVK">`}
+				<h1 class="title astro-WXFHOGVK">${title}</h1>
+				${pubDate && renderTemplate`<time class="astro-WXFHOGVK">${pubDate}</time>`}
+				${updatedDate && renderTemplate`<div class="astro-WXFHOGVK">
+							Last updated on <time class="astro-WXFHOGVK">${updatedDate}</time>
 						</div>`}
-				<hr class="astro-CZGL4BJA">
+				<hr class="astro-WXFHOGVK">
 				${renderSlot($$result, $$slots["default"])}
 			</article>
 		</main>
-		${renderComponent($$result, "Footer", $$Footer, { "class": "astro-CZGL4BJA" })}
+		${renderComponent($$result, "Footer", $$Footer, { "class": "astro-WXFHOGVK" })}
 	</body></html>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/layouts/BlogPost.astro");
-
-const $$file$1 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/layouts/BlogPost.astro";
-const $$url$1 = undefined;
-
-const BlogPost = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: $$BlogPost,
-  file: $$file$1,
-  url: $$url$1
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const html$4 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>\n<p>Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.</p>\n<p>Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.</p>\n<p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.</p>\n<p>Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.</p>";
-
-				const _internal$5 = {
-					injectedFrontmatter: {},
-				};
-				const frontmatter$5 = {"layout":"../layouts/BlogPost.astro","title":"About Me","description":"Lorem ipsum dolor sit amet","updatedDate":"August 08 2022","heroImage":"/placeholder-about.jpg"};
-				const file$5 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/about.md";
-				const url$5 = "/about";
-				function rawContent$5() {
-					return "\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.\n\nMorbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.\n\nMollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.\n\nMattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.\n\nTempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.";
-				}
-				function compiledContent$5() {
-					return html$4;
-				}
-				function getHeadings$5() {
-					return [];
-				}
-				function getHeaders$4() {
-					console.warn('getHeaders() have been deprecated. Use getHeadings() function instead.');
-					return getHeadings$5();
-				}				async function Content$5() {
-					const { layout, ...content } = frontmatter$5;
-					content.file = file$5;
-					content.url = url$5;
-					content.astro = {};
-					Object.defineProperty(content.astro, 'headings', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "headings" from your layout, try using "Astro.props.headings."')
-						}
-					});
-					Object.defineProperty(content.astro, 'html', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "html" from your layout, try using "Astro.props.compiledContent()."')
-						}
-					});
-					Object.defineProperty(content.astro, 'source', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "source" from your layout, try using "Astro.props.rawContent()."')
-						}
-					});
-					const contentFragment = createVNode(Fragment, { 'set:html': html$4 });
-					return createVNode($$BlogPost, {
-									file: file$5,
-									url: url$5,
-									content,
-									frontmatter: content,
-									headings: getHeadings$5(),
-									rawContent: rawContent$5,
-									compiledContent: compiledContent$5,
-									'server:root': true,
-									children: contentFragment
-								});
-				}
-				Content$5[Symbol.for('astro.needsHeadRendering')] = false;
-
-const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  _internal: _internal$5,
-  frontmatter: frontmatter$5,
-  file: file$5,
-  url: url$5,
-  rawContent: rawContent$5,
-  compiledContent: compiledContent$5,
-  getHeadings: getHeadings$5,
-  getHeaders: getHeaders$4,
-  Content: Content$5,
-  default: Content$5
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const html$3 = "<p>Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.</p>\n<h2 id=\"headings\">Headings</h2>\n<p>The following HTML <code>&#x3C;h1></code>—<code>&#x3C;h6></code> elements represent six levels of section headings. <code>&#x3C;h1></code> is the highest section level while <code>&#x3C;h6></code> is the lowest.</p>\n<h1 id=\"h1\">H1</h1>\n<h2 id=\"h2\">H2</h2>\n<h3 id=\"h3\">H3</h3>\n<h4 id=\"h4\">H4</h4>\n<h5 id=\"h5\">H5</h5>\n<h6 id=\"h6\">H6</h6>\n<h2 id=\"paragraph\">Paragraph</h2>\n<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>\n<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>\n<h2 id=\"images\">Images</h2>\n<p><img src=\"/placeholder-social.jpg\" alt=\"This is a placeholder image description\"></p>\n<h2 id=\"blockquotes\">Blockquotes</h2>\n<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>\n<h4 id=\"blockquote-without-attribution\">Blockquote without attribution</h4>\n<blockquote>\n<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.<br>\n<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>\n</blockquote>\n<h4 id=\"blockquote-with-attribution\">Blockquote with attribution</h4>\n<blockquote>\n<p>Don’t communicate by sharing memory, share memory by communicating.<br>\n— <cite>Rob Pike<sup><a href=\"#user-content-fn-1\" id=\"user-content-fnref-1\" data-footnote-ref=\"\" aria-describedby=\"footnote-label\">1</a></sup></cite></p>\n</blockquote>\n<h2 id=\"tables\">Tables</h2>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<table><thead><tr><th>Italics</th><th>Bold</th><th>Code</th></tr></thead><tbody><tr><td><em>italics</em></td><td><strong>bold</strong></td><td><code>code</code></td></tr></tbody></table>\n<h2 id=\"code-blocks\">Code Blocks</h2>\n<pre is:raw=\"\" class=\"astro-code\" style=\"background-color: #0d1117; overflow-x: auto;\"><code><span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;!</span><span style=\"color: #7EE787\">doctype</span><span style=\"color: #C9D1D9\"> </span><span style=\"color: #79C0FF\">html</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;</span><span style=\"color: #7EE787\">html</span><span style=\"color: #C9D1D9\"> </span><span style=\"color: #79C0FF\">lang</span><span style=\"color: #C9D1D9\">=</span><span style=\"color: #A5D6FF\">\"en\"</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;</span><span style=\"color: #7EE787\">head</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">  &#x3C;</span><span style=\"color: #7EE787\">meta</span><span style=\"color: #C9D1D9\"> </span><span style=\"color: #79C0FF\">charset</span><span style=\"color: #C9D1D9\">=</span><span style=\"color: #A5D6FF\">\"utf-8\"</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">  &#x3C;</span><span style=\"color: #7EE787\">title</span><span style=\"color: #C9D1D9\">>Example HTML5 Document&#x3C;/</span><span style=\"color: #7EE787\">title</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;/</span><span style=\"color: #7EE787\">head</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;</span><span style=\"color: #7EE787\">body</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">  &#x3C;</span><span style=\"color: #7EE787\">p</span><span style=\"color: #C9D1D9\">>Test&#x3C;/</span><span style=\"color: #7EE787\">p</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;/</span><span style=\"color: #7EE787\">body</span><span style=\"color: #C9D1D9\">></span></span>\n<span class=\"line\"><span style=\"color: #C9D1D9\">&#x3C;/</span><span style=\"color: #7EE787\">html</span><span style=\"color: #C9D1D9\">></span></span></code></pre>\n<h2 id=\"list-types\">List Types</h2>\n<h4 id=\"ordered-list\">Ordered List</h4>\n<ol>\n<li>First item</li>\n<li>Second item</li>\n<li>Third item</li>\n</ol>\n<h4 id=\"unordered-list\">Unordered List</h4>\n<ul>\n<li>List item</li>\n<li>Another item</li>\n<li>And another item</li>\n</ul>\n<h4 id=\"nested-list\">Nested list</h4>\n<ul>\n<li>Fruit\n<ul>\n<li>Apple</li>\n<li>Orange</li>\n<li>Banana</li>\n</ul>\n</li>\n<li>Dairy\n<ul>\n<li>Milk</li>\n<li>Cheese</li>\n</ul>\n</li>\n</ul>\n<h2 id=\"other-elements--abbr-sub-sup-kbd-mark\">Other Elements — abbr, sub, sup, kbd, mark</h2>\n<p><abbr title=\"Graphics Interchange Format\">GIF</abbr> is a bitmap image format.</p>\n<p>H<sub>2</sub>O</p>\n<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>\n<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>\n<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>\n<section data-footnotes=\"\" class=\"footnotes\"><h2 class=\"sr-only\" id=\"footnote-label\">Footnotes</h2>\n<ol>\n<li id=\"user-content-fn-1\">\n<p>The above quote is excerpted from Rob Pike’s <a href=\"https://www.youtube.com/watch?v=PAAkCSZUG1c\">talk</a> during Gopherfest, November 18, 2015. <a href=\"#user-content-fnref-1\" data-footnote-backref=\"\" class=\"data-footnote-backref\" aria-label=\"Back to content\">↩</a></p>\n</li>\n</ol>\n</section>";
-
-				const _internal$4 = {
-					injectedFrontmatter: {},
-				};
-				const frontmatter$4 = {"layout":"../../layouts/BlogPost.astro","title":"Markdown Style Guide","description":"Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.","pubDate":"Jul 01 2022","heroImage":"/placeholder-hero.jpg"};
-				const file$4 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog/markdown-style-guide.md";
-				const url$4 = "/blog/markdown-style-guide";
-				function rawContent$4() {
-					return "\nHere is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.\n\n## Headings\n\nThe following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.\n\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\n## Paragraph\n\nXerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.\n\nItatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.\n\n## Images\n\n![This is a placeholder image description](/placeholder-social.jpg)\n\n## Blockquotes\n\nThe blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.\n\n#### Blockquote without attribution\n\n> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  \n> **Note** that you can use *Markdown syntax* within a blockquote.\n\n#### Blockquote with attribution\n\n> Don't communicate by sharing memory, share memory by communicating.<br>\n> — <cite>Rob Pike[^1]</cite>\n\n[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.\n\n## Tables\n\n| Italics   | Bold     | Code   |\n| --------  | -------- | ------ |\n| *italics* | **bold** | `code` |\n\n## Code Blocks\n\n```html\n<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Example HTML5 Document</title>\n</head>\n<body>\n  <p>Test</p>\n</body>\n</html>\n```\n\n## List Types\n\n#### Ordered List\n\n1. First item\n2. Second item\n3. Third item\n\n#### Unordered List\n\n* List item\n* Another item\n* And another item\n\n#### Nested list\n\n* Fruit\n  * Apple\n  * Orange\n  * Banana\n* Dairy\n  * Milk\n  * Cheese\n\n## Other Elements — abbr, sub, sup, kbd, mark\n\n<abbr title=\"Graphics Interchange Format\">GIF</abbr> is a bitmap image format.\n\nH<sub>2</sub>O\n\nX<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>\n\nPress <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.\n\nMost <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.\n";
-				}
-				function compiledContent$4() {
-					return html$3;
-				}
-				function getHeadings$4() {
-					return [{"depth":2,"slug":"headings","text":"Headings"},{"depth":1,"slug":"h1","text":"H1"},{"depth":2,"slug":"h2","text":"H2"},{"depth":3,"slug":"h3","text":"H3"},{"depth":4,"slug":"h4","text":"H4"},{"depth":5,"slug":"h5","text":"H5"},{"depth":6,"slug":"h6","text":"H6"},{"depth":2,"slug":"paragraph","text":"Paragraph"},{"depth":2,"slug":"images","text":"Images"},{"depth":2,"slug":"blockquotes","text":"Blockquotes"},{"depth":4,"slug":"blockquote-without-attribution","text":"Blockquote without attribution"},{"depth":4,"slug":"blockquote-with-attribution","text":"Blockquote with attribution"},{"depth":2,"slug":"tables","text":"Tables"},{"depth":2,"slug":"code-blocks","text":"Code Blocks"},{"depth":2,"slug":"list-types","text":"List Types"},{"depth":4,"slug":"ordered-list","text":"Ordered List"},{"depth":4,"slug":"unordered-list","text":"Unordered List"},{"depth":4,"slug":"nested-list","text":"Nested list"},{"depth":2,"slug":"other-elements--abbr-sub-sup-kbd-mark","text":"Other Elements — abbr, sub, sup, kbd, mark"},{"depth":2,"slug":"footnote-label","text":"Footnotes"}];
-				}
-				function getHeaders$3() {
-					console.warn('getHeaders() have been deprecated. Use getHeadings() function instead.');
-					return getHeadings$4();
-				}				async function Content$4() {
-					const { layout, ...content } = frontmatter$4;
-					content.file = file$4;
-					content.url = url$4;
-					content.astro = {};
-					Object.defineProperty(content.astro, 'headings', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "headings" from your layout, try using "Astro.props.headings."')
-						}
-					});
-					Object.defineProperty(content.astro, 'html', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "html" from your layout, try using "Astro.props.compiledContent()."')
-						}
-					});
-					Object.defineProperty(content.astro, 'source', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "source" from your layout, try using "Astro.props.rawContent()."')
-						}
-					});
-					const contentFragment = createVNode(Fragment, { 'set:html': html$3 });
-					return createVNode($$BlogPost, {
-									file: file$4,
-									url: url$4,
-									content,
-									frontmatter: content,
-									headings: getHeadings$4(),
-									rawContent: rawContent$4,
-									compiledContent: compiledContent$4,
-									'server:root': true,
-									children: contentFragment
-								});
-				}
-				Content$4[Symbol.for('astro.needsHeadRendering')] = false;
-
-const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  _internal: _internal$4,
-  frontmatter: frontmatter$4,
-  file: file$4,
-  url: url$4,
-  rawContent: rawContent$4,
-  compiledContent: compiledContent$4,
-  getHeadings: getHeadings$4,
-  getHeaders: getHeaders$3,
-  Content: Content$4,
-  default: Content$4
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const html$2 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>\n<p>Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.</p>\n<p>Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.</p>\n<p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.</p>\n<p>Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.</p>";
-
-				const _internal$3 = {
-					injectedFrontmatter: {},
-				};
-				const frontmatter$3 = {"layout":"../../layouts/BlogPost.astro","title":"Second post","description":"Lorem ipsum dolor sit amet","pubDate":"Jul 22 2022","heroImage":"/placeholder-hero.jpg"};
-				const file$3 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog/second-post.md";
-				const url$3 = "/blog/second-post";
-				function rawContent$3() {
-					return "\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.\n\nMorbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.\n\nMollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.\n\nMattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.\n\nTempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.";
-				}
-				function compiledContent$3() {
-					return html$2;
-				}
-				function getHeadings$3() {
-					return [];
-				}
-				function getHeaders$2() {
-					console.warn('getHeaders() have been deprecated. Use getHeadings() function instead.');
-					return getHeadings$3();
-				}				async function Content$3() {
-					const { layout, ...content } = frontmatter$3;
-					content.file = file$3;
-					content.url = url$3;
-					content.astro = {};
-					Object.defineProperty(content.astro, 'headings', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "headings" from your layout, try using "Astro.props.headings."')
-						}
-					});
-					Object.defineProperty(content.astro, 'html', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "html" from your layout, try using "Astro.props.compiledContent()."')
-						}
-					});
-					Object.defineProperty(content.astro, 'source', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "source" from your layout, try using "Astro.props.rawContent()."')
-						}
-					});
-					const contentFragment = createVNode(Fragment, { 'set:html': html$2 });
-					return createVNode($$BlogPost, {
-									file: file$3,
-									url: url$3,
-									content,
-									frontmatter: content,
-									headings: getHeadings$3(),
-									rawContent: rawContent$3,
-									compiledContent: compiledContent$3,
-									'server:root': true,
-									children: contentFragment
-								});
-				}
-				Content$3[Symbol.for('astro.needsHeadRendering')] = false;
-
-const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  _internal: _internal$3,
-  frontmatter: frontmatter$3,
-  file: file$3,
-  url: url$3,
-  rawContent: rawContent$3,
-  compiledContent: compiledContent$3,
-  getHeadings: getHeadings$3,
-  getHeaders: getHeaders$2,
-  Content: Content$3,
-  default: Content$3
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const html$1 = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>\n<p>Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.</p>\n<p>Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.</p>\n<p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.</p>\n<p>Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.</p>";
-
-				const _internal$2 = {
-					injectedFrontmatter: {},
-				};
-				const frontmatter$2 = {"layout":"../../layouts/BlogPost.astro","title":"First post","description":"Lorem ipsum dolor sit amet","pubDate":"Jul 08 2022","heroImage":"/placeholder-hero.jpg"};
-				const file$2 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog/first-post.md";
-				const url$2 = "/blog/first-post";
-				function rawContent$2() {
-					return "\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.\n\nMorbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.\n\nMollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.\n\nMattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.\n\nTempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.";
-				}
-				function compiledContent$2() {
-					return html$1;
-				}
-				function getHeadings$2() {
-					return [];
-				}
-				function getHeaders$1() {
-					console.warn('getHeaders() have been deprecated. Use getHeadings() function instead.');
-					return getHeadings$2();
-				}				async function Content$2() {
-					const { layout, ...content } = frontmatter$2;
-					content.file = file$2;
-					content.url = url$2;
-					content.astro = {};
-					Object.defineProperty(content.astro, 'headings', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "headings" from your layout, try using "Astro.props.headings."')
-						}
-					});
-					Object.defineProperty(content.astro, 'html', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "html" from your layout, try using "Astro.props.compiledContent()."')
-						}
-					});
-					Object.defineProperty(content.astro, 'source', {
-						get() {
-							throw new Error('The "astro" property is no longer supported! To access "source" from your layout, try using "Astro.props.rawContent()."')
-						}
-					});
-					const contentFragment = createVNode(Fragment, { 'set:html': html$1 });
-					return createVNode($$BlogPost, {
-									file: file$2,
-									url: url$2,
-									content,
-									frontmatter: content,
-									headings: getHeadings$2(),
-									rawContent: rawContent$2,
-									compiledContent: compiledContent$2,
-									'server:root': true,
-									children: contentFragment
-								});
-				}
-				Content$2[Symbol.for('astro.needsHeadRendering')] = false;
-
-const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  _internal: _internal$2,
-  frontmatter: frontmatter$2,
-  file: file$2,
-  url: url$2,
-  rawContent: rawContent$2,
-  compiledContent: compiledContent$2,
-  getHeadings: getHeadings$2,
-  getHeaders: getHeaders$1,
-  Content: Content$2,
-  default: Content$2
-}, Symbol.toStringTag, { value: 'Module' }));
+}, "C:/Users/sdpar/Code/personal-site-astro/src/layouts/BlogPost.astro");
 
 const html = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.</p>\n<p>Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.</p>\n<p>Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.</p>\n<p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.</p>\n<p>Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.</p>";
 
-				const _internal$1 = {
+				const _internal = {
 					injectedFrontmatter: {},
 				};
-				const frontmatter$1 = {"layout":"../../layouts/BlogPost.astro","title":"Third post","description":"Lorem ipsum dolor sit amet","pubDate":"Jul 15 2022","heroImage":"/placeholder-hero.jpg"};
-				const file$1 = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog/third-post.md";
-				const url$1 = "/blog/third-post";
-				function rawContent$1() {
+				const frontmatter = {"layout":"../layouts/BlogPost.astro","title":"About Me","description":"Lorem ipsum dolor sit amet","updatedDate":"August 08 2022","heroImage":"/placeholder-about.jpg"};
+				const file = "C:/Users/sdpar/Code/personal-site-astro/src/pages/about.md";
+				const url = "/about";
+				function rawContent() {
 					return "\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.\n\nMorbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.\n\nMollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.\n\nMattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.\n\nTempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.";
 				}
-				function compiledContent$1() {
+				function compiledContent() {
 					return html;
 				}
-				function getHeadings$1() {
+				function getHeadings() {
 					return [];
 				}
 				function getHeaders() {
 					console.warn('getHeaders() have been deprecated. Use getHeadings() function instead.');
-					return getHeadings$1();
-				}				async function Content$1() {
-					const { layout, ...content } = frontmatter$1;
-					content.file = file$1;
-					content.url = url$1;
+					return getHeadings();
+				}				async function Content() {
+					const { layout, ...content } = frontmatter;
+					content.file = file;
+					content.url = url;
 					content.astro = {};
 					Object.defineProperty(content.astro, 'headings', {
 						get() {
@@ -2790,236 +2561,34 @@ const html = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					});
 					const contentFragment = createVNode(Fragment, { 'set:html': html });
 					return createVNode($$BlogPost, {
-									file: file$1,
-									url: url$1,
+									file,
+									url,
 									content,
 									frontmatter: content,
-									headings: getHeadings$1(),
-									rawContent: rawContent$1,
-									compiledContent: compiledContent$1,
+									headings: getHeadings(),
+									rawContent,
+									compiledContent,
 									'server:root': true,
 									children: contentFragment
 								});
 				}
-				Content$1[Symbol.for('astro.needsHeadRendering')] = false;
+				Content[Symbol.for('astro.needsHeadRendering')] = false;
 
-const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  _internal: _internal$1,
-  frontmatter: frontmatter$1,
-  file: file$1,
-  url: url$1,
-  rawContent: rawContent$1,
-  compiledContent: compiledContent$1,
-  getHeadings: getHeadings$1,
-  getHeaders,
-  Content: Content$1,
-  default: Content$1
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const MDXLayout = async function ({
-  children
-}) {
-  const Layout = (await Promise.resolve().then(() => BlogPost)).default;
-  const {
-    layout,
-    ...content
-  } = frontmatter;
-  content.file = file;
-  content.url = url;
-  content.astro = {};
-  Object.defineProperty(content.astro, "headings", {
-    get() {
-      throw new Error('The "astro" property is no longer supported! To access "headings" from your layout, try using "Astro.props.headings."');
-    }
-  });
-  Object.defineProperty(content.astro, "html", {
-    get() {
-      throw new Error('The "astro" property is no longer supported! To access "html" from your layout, try using "Astro.props.compiledContent()."');
-    }
-  });
-  Object.defineProperty(content.astro, "source", {
-    get() {
-      throw new Error('The "astro" property is no longer supported! To access "source" from your layout, try using "Astro.props.rawContent()."');
-    }
-  });
-  return createVNode(Layout, {
-    file,
-    url,
-    content,
-    frontmatter: content,
-    headings: getHeadings(),
-    "server:root": true,
-    children
-  });
-};
-const frontmatter = {
-  "layout": "../../layouts/BlogPost.astro",
-  "title": "Using MDX",
-  "description": "Lorem ipsum dolor sit amet",
-  "pubDate": "Jul 02 2022",
-  "heroImage": "/placeholder-hero.jpg"
-};
-const _internal = {
-  injectedFrontmatter: {}
-};
-function getHeadings() {
-  return [{
-    "depth": 2,
-    "slug": "why-mdx",
-    "text": "Why MDX?"
-  }, {
-    "depth": 2,
-    "slug": "example",
-    "text": "Example"
-  }, {
-    "depth": 2,
-    "slug": "more-links",
-    "text": "More Links"
-  }];
-}
-function _createMdxContent(props) {
-  const _components = Object.assign({
-    p: "p",
-    a: "a",
-    code: "code",
-    h2: "h2",
-    br: "br",
-    ul: "ul",
-    li: "li",
-    strong: "strong"
-  }, props.components);
-  return createVNode(Fragment, {
-    children: [createVNode(_components.p, {
-      children: ["This theme comes with the ", createVNode(_components.a, {
-        href: "https://docs.astro.build/en/guides/integrations-guide/mdx/",
-        children: "@astrojs/mdx"
-      }), " integration installed and configured in your ", createVNode(_components.code, {
-        children: "astro.config.mjs"
-      }), " config file. If you prefer not to use MDX, you can disable support by removing the integration from your config file."]
-    }), "\n", createVNode(_components.h2, {
-      id: "why-mdx",
-      children: "Why MDX?"
-    }), "\n", createVNode(_components.p, {
-      children: ["MDX is a special flavor of Markdown that supports embedded JavaScript & JSX syntax. This unlocks the ability to ", createVNode(_components.a, {
-        href: "https://docs.astro.build/en/guides/markdown-content/#mdx-features",
-        children: "mix JavaScript and UI Components into your Markdown content"
-      }), " for things like interactive charts or alerts."]
-    }), "\n", createVNode(_components.p, {
-      children: "If you have existing content authored in MDX, this integration will hopefully make migrating to Astro a breeze."
-    }), "\n", createVNode(_components.h2, {
-      id: "example",
-      children: "Example"
-    }), "\n", createVNode(_components.p, {
-      children: ["Here is how you import and use a UI component inside of MDX.", createVNode(_components.br, {}), "\nWhen you open this page in the browser, you should see the clickable button below."]
-    }), "\n", "\n", createVNode($$HeaderLink, {
-      href: "#",
-      onclick: "alert('clicked!')",
-      children: createVNode(_components.p, {
-        children: "Embedded component in MDX"
-      })
-    }), "\n", createVNode(_components.h2, {
-      id: "more-links",
-      children: "More Links"
-    }), "\n", createVNode(_components.ul, {
-      children: ["\n", createVNode(_components.li, {
-        children: createVNode(_components.a, {
-          href: "https://mdxjs.com/docs/what-is-mdx",
-          children: "MDX Syntax Documentation"
-        })
-      }), "\n", createVNode(_components.li, {
-        children: createVNode(_components.a, {
-          href: "https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages",
-          children: "Astro Usage Documentation"
-        })
-      }), "\n", createVNode(_components.li, {
-        children: [createVNode(_components.strong, {
-          children: "Note:"
-        }), " ", createVNode(_components.a, {
-          href: "https://docs.astro.build/en/reference/directives-reference/#client-directives",
-          children: "Client Directives"
-        }), " are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default."]
-      }), "\n"]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  return createVNode(MDXLayout, {
-    ...props,
-    children: createVNode(_createMdxContent, {
-      ...props
-    })
-  });
-}
-
-__astro_tag_component__(getHeadings, "astro:jsx");
-__astro_tag_component__(MDXContent, "astro:jsx");
-const url = "/blog/using-mdx";
-const file = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog/using-mdx.mdx";
-function rawContent() { throw new Error("MDX does not support rawContent()! If you need to read the Markdown contents to calculate values (ex. reading time), we suggest injecting frontmatter via remark plugins. Learn more on our docs: https://docs.astro.build/en/guides/integrations-guide/mdx/#inject-frontmatter-via-remark-or-rehype-plugins") }function compiledContent() { throw new Error("MDX does not support compiledContent()! If you need to read the HTML contents to calculate values (ex. reading time), we suggest injecting frontmatter via rehype plugins. Learn more on our docs: https://docs.astro.build/en/guides/integrations-guide/mdx/#inject-frontmatter-via-remark-or-rehype-plugins") }const Content = (props = {}) => MDXContent({
-											...props,
-											components: { Fragment, ...props.components },
-										});
-Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
-
-const _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  frontmatter,
   _internal,
-  getHeadings,
-  url,
+  frontmatter,
   file,
+  url,
   rawContent,
   compiledContent,
+  getHeadings,
+  getHeaders,
   Content,
   default: Content
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$Astro = createAstro("C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog.astro", "https://example.com/", "file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/");
-const $$Blog = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
-  Astro2.self = $$Blog;
-  const posts = (await Astro2.glob(/* #__PURE__ */ Object.assign({"./blog/first-post.md": () => Promise.resolve().then(() => _page5),"./blog/markdown-style-guide.md": () => Promise.resolve().then(() => _page3),"./blog/second-post.md": () => Promise.resolve().then(() => _page4),"./blog/third-post.md": () => Promise.resolve().then(() => _page6),"./blog/using-mdx.mdx": () => Promise.resolve().then(() => _page7)}), () => "./blog/*.{md,mdx}")).sort(
-    (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
-  );
-  return renderTemplate`<html lang="en" class="astro-SHAZ7TX2">
-	<head>
-		${renderComponent($$result, "BaseHead", $$BaseHead, { "title": SITE_TITLE, "description": SITE_DESCRIPTION, "class": "astro-SHAZ7TX2" })}
-		
-	${renderHead($$result)}</head>
-	<body class="astro-SHAZ7TX2">
-		${renderComponent($$result, "Header", $$Header, { "class": "astro-SHAZ7TX2" })}
-		<main class="astro-SHAZ7TX2">
-			<section class="astro-SHAZ7TX2">
-				<ul class="astro-SHAZ7TX2">
-					${posts.map((post) => renderTemplate`<li class="astro-SHAZ7TX2">
-								<time${addAttribute(post.frontmatter.pubDate, "datetime")} class="astro-SHAZ7TX2">
-									${new Date(post.frontmatter.pubDate).toLocaleDateString("en-us", {
-    year: "numeric",
-    month: "short",
-    day: "numeric"
-  })}
-								</time>
-								<a${addAttribute(post.url, "href")} class="astro-SHAZ7TX2">${post.frontmatter.title}</a>
-							</li>`)}
-				</ul>
-			</section>
-		</main>
-		${renderComponent($$result, "Footer", $$Footer, { "class": "astro-SHAZ7TX2" })}
-	</body></html>`;
-}, "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog.astro");
-
-const $$file = "C:/Users/pheni/Documents/Web Projects/personal-site-astro/src/pages/blog.astro";
-const $$url = "/blog";
-
-const _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: $$Blog,
-  file: $$file,
-  url: $$url
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const pageMap = new Map([["src/pages/index.astro", _page0],["src/pages/rss.xml.js", _page1],["src/pages/about.md", _page2],["src/pages/blog/markdown-style-guide.md", _page3],["src/pages/blog/second-post.md", _page4],["src/pages/blog/first-post.md", _page5],["src/pages/blog/third-post.md", _page6],["src/pages/blog/using-mdx.mdx", _page7],["src/pages/blog.astro", _page8],]);
+const pageMap = new Map([["src/pages/index.astro", _page0],["src/pages/wishlist.astro", _page1],["src/pages/rss.xml.js", _page2],["src/pages/about.md", _page3],]);
 const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"astro/jsx/server.js","jsxImportSource":"astro"}, { ssr: server_default }),];
 
 if (typeof process !== "undefined") {
@@ -3096,7 +2665,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/about.3fdcefa0.css","assets/index.dac14c78.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/rss.xml","type":"endpoint","pattern":"^\\/rss\\.xml$","segments":[[{"content":"rss.xml","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/rss.xml.js","pathname":"/rss.xml","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/about","type":"page","pattern":"^\\/about\\/?$","segments":[[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/about.md","pathname":"/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/blog/markdown-style-guide","type":"page","pattern":"^\\/blog\\/markdown-style-guide\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}],[{"content":"markdown-style-guide","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog/markdown-style-guide.md","pathname":"/blog/markdown-style-guide","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/blog/second-post","type":"page","pattern":"^\\/blog\\/second-post\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}],[{"content":"second-post","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog/second-post.md","pathname":"/blog/second-post","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/blog/first-post","type":"page","pattern":"^\\/blog\\/first-post\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}],[{"content":"first-post","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog/first-post.md","pathname":"/blog/first-post","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/blog/third-post","type":"page","pattern":"^\\/blog\\/third-post\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}],[{"content":"third-post","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog/third-post.md","pathname":"/blog/third-post","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css"],"scripts":[],"routeData":{"route":"/blog/using-mdx","type":"page","pattern":"^\\/blog\\/using-mdx\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}],[{"content":"using-mdx","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog/using-mdx.mdx","pathname":"/blog/using-mdx","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.3fdcefa0.css","assets/about.e7e15a78.css","assets/blog.5d0c6419.css"],"scripts":[],"routeData":{"route":"/blog","type":"page","pattern":"^\\/blog\\/?$","segments":[[{"content":"blog","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/blog.astro","pathname":"/blog","_meta":{"trailingSlash":"ignore"}}}],"site":"https://example.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false,"isExperimentalContentCollections":false,"contentDir":"file:///C:/Users/pheni/Documents/Web%20Projects/personal-site-astro/src/content/"},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":""},"assets":["/assets/about.e7e15a78.css","/assets/blog.5d0c6419.css","/assets/about.3fdcefa0.css","/assets/index.dac14c78.css","/del-notes.png","/favicon.svg","/fm-intro.png","/fm-price.png","/issue-tracker.png","/placeholder-about.jpg","/placeholder-hero.jpg","/placeholder-social.jpg","/react-from-scratch.png"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/about.200f9460.css","assets/index.f296b90a.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/wishlist.627e48b4.css"],"scripts":[],"routeData":{"route":"/wishlist","type":"page","pattern":"^\\/wishlist\\/?$","segments":[[{"content":"wishlist","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/wishlist.astro","pathname":"/wishlist","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/rss.xml","type":"endpoint","pattern":"^\\/rss\\.xml$","segments":[[{"content":"rss.xml","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/rss.xml.js","pathname":"/rss.xml","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/about.200f9460.css","assets/about.5e800a85.css"],"scripts":[],"routeData":{"route":"/about","type":"page","pattern":"^\\/about\\/?$","segments":[[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/about.md","pathname":"/about","_meta":{"trailingSlash":"ignore"}}}],"site":"https://example.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false,"isExperimentalContentCollections":false,"contentDir":"file:///C:/Users/sdpar/Code/personal-site-astro/src/content/"},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":""},"assets":["/assets/about.5e800a85.css","/assets/index.f296b90a.css","/assets/wishlist.627e48b4.css","/assets/about.200f9460.css","/del-notes.png","/favicon.svg","/fm-intro.png","/fm-price.png","/issue-tracker.png","/placeholder-about.jpg","/placeholder-hero.jpg","/placeholder-social.jpg","/react-from-scratch.png"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
