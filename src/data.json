@@ -2,13 +2,11 @@
   "section1": {
     "title": "Ryobi Power Tools",
     "items": [
-      "ONE+ 18V Cordless Dual Function Inflator/ Deflator",
-      "ONE+ HP 18V Brushless Cordless Compact 6-1/2 in. Circular Saw",
-      "ONE+ HP 18V Brushless Cordless Jig Saw",
-      "ONE+ 18V 18-Gauge Cordless AirStrike Brad Nailer",
-      "ONE+ 18V Cordless 4-1/2 in. Angle Grinder",
       "ONE+ 18V Cordless Multi-Tool",
-      "ONE+ 18V Cordless 5 in. Random Orbit Sander"
+      "ONE+ HP 18V Brushless Cordless Compact 6-1/2 in. Circular Saw",
+      "ONE+ 18V Cordless Dual Function Inflator/ Deflator",
+      "ONE+ HP 18V Brushless Cordless Jig Saw",
+      "ONE+ 18V Cordless 4-1/2 in. Angle Grinder"
     ]
   },
   "section2": {
@@ -16,19 +14,24 @@
     "items": [
       "Miter Saw",
       "Pressure Washer",
-      "Shop Vac",
       "Electric Paint Sprayer",
       "Digital Calipers",
       "Digital Tape Measure",
-      "Standing Toolbox",
       "Laser Level",
       "1/2 inch Impact Socket Sets (Standard and Metric)",
-      "Folding Lock-Back Utility Knife",
       "Flat Pry Bar",
       "Pipe Wrench",
       "Hand Axe",
-      "Sledgehammer"
+      "Sledgehammer",
+      "Infrared thermometer",
+      "Torque wrench",
+      "3 ft level"
+    ]
+  },
+  "section3": {
+    "title": "Other things",
+    "items": [
+      "Home Depot gift cards"
     ]
   }
 }
-
