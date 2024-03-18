@@ -10,7 +10,7 @@ const { props } = Astro.props;
   <div class="container">
     <div class="left">
       <h3>{props.name}</h3>
-      <p class="text">{props.description}</p>
+      <p class="description">{props.description}</p>
       <div class="projectTech">
         {props.tech.map((item: string) => <p class="techItem">{item}</p>)}
       </div>
@@ -48,17 +48,18 @@ const { props } = Astro.props;
     width: 600px;
   }
 
-  .text {
+  .description {
     width: 80%;
   }
 
-  .text h3 {
-    margin: 0 0 2rem 0;
-    font-size: 2rem;
+  .left h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
   }
 
   .projectTech {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -66,7 +67,7 @@ const { props } = Astro.props;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     padding: 0.5rem 0.75rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
   }
 
   .buttons {
