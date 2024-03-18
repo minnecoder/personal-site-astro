@@ -1,5 +1,6 @@
 <div class="container">
   <div class="aboutText">
+    <h2>About Me</h2>
     <h3>A little about me</h3>
     <p>
       My name is Sean Parkin, I am full stack developer with a preference for
@@ -10,7 +11,7 @@
     </p>
   </div>
   <div class="skillsSection">
-    <h2>My Skills</h2>
+    <h3>My Skills</h3>
     <div class="skills">
       <p class="skill">HTML</p>
       <p class="skill">CSS</p>
@@ -31,6 +32,7 @@
 <style>
   .container {
     display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 0 auto;
     align-items: center;
@@ -51,12 +53,17 @@
     text-align: center;
     margin-bottom: 20px;
   }
+  .aboutText > h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
   .skillsSection {
     padding: 1rem;
   }
 
-  .skillsSection > h2 {
+  .skillsSection > h3 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -83,5 +90,24 @@
     text-align: center;
     color: #666;
     border-radius: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 0px;
+    }
+    .skillsSection > h3 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    .aboutText > h2 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    .aboutText > h3 {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
   }
 </style>
