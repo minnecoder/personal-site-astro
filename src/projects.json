@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Junior Dev Job Board",
-    "description": "Full stack app that is a job board for jobs for junior developers",
+    "description": "Full stack app that is a job board for jobs for junior developers ",
     "img": "jrdevjobboard.png",
     "tech": [
       "NextJS"
@@ -31,12 +31,11 @@
       "TypeScript",
       "Node",
       "Express",
-      "MongoDB",
-      "Mongoose",
-      "JWT"
+      "MongoDB"
+      
     ],
     "github": "https://github.com/minnecoder/delivery-notes-fullstack/",
-    "website": "https://driver-notes.herokuapp.com//#/"
+    "website": "https://driver-notes.vercel.app/"
   },
   {
     "id": "4",
