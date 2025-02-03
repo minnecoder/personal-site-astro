@@ -1,37 +1,39 @@
 {
   "section1": {
-    "title": "Ryobi Power Tools",
+    "title": "Home Depot",
     "items": [
-      "ONE+ 18V Cordless Multi-Tool",
-      "ONE+ HP 18V Brushless Cordless Compact 6-1/2 in. Circular Saw",
-      "ONE+ 18V Cordless Dual Function Inflator/ Deflator",
-      "ONE+ HP 18V Brushless Cordless Jig Saw",
-      "ONE+ 18V Cordless 4-1/2 in. Angle Grinder"
+      "ONE+ 18V Cordless 4-1/2 in. Angle Grinder",
+      "Husky SAE and Metric Socket Rack Set",
+      "Husky SAE Combination Wrench Set",
+      "Ryobi ONE+ 18V 100 MPH 350 CFM Cordless Battery Variable-Speed Jet Fan Leaf Blower",
+      "Ryobi 2.1 Amp 6 Grinder with LED lights",
+      "1/2 inch Impact Socket Sets Standard",
+      "BITE Metric Impact Ready Interchangeable Nut Driver Set",
+      "Husky 10 in. Groove Pliers with Quick Adjusting Joint and Curved Jaw",
+      "Home Depot gift cards"
     ]
   },
   "section2": {
-    "title": "Tools",
+    "title": "Harbor Freight",
     "items": [
-      "Miter Saw",
-      "Pressure Washer",
-      "Electric Paint Sprayer",
       "Digital Calipers",
       "Digital Tape Measure",
       "Laser Level",
-      "1/2 inch Impact Socket Sets (Standard and Metric)",
-      "Flat Pry Bar",
-      "Pipe Wrench",
-      "Hand Axe",
-      "Sledgehammer",
       "Infrared thermometer",
-      "Torque wrench",
-      "3 ft level"
-    ]
-  },
-  "section3": {
-    "title": "Other things",
-    "items": [
-      "Home Depot gift cards"
+      "U.S. GENERAL 15 Slot Wrench Organizer",
+      "PITTSBURGH 11 in. Straight & 90° Offset Long Reach Pliers",
+      "Mini Pick and Hook Set",
+      "SAE and Metric T-Handle Ball End Hex Key Set",
+      "Wood Chisel Set with Clear PVC Handle",
+      "6 in Digital Caliper",
+      "Nylon Pry Bar Installer Kit",
+      "3lb Neon Orange Dead Blow Hammer",
+      "Pick and Hook Set",
+      "Oil Filter Pliers",
+      "Precision Pliers Set",
+      "Carbon Steel SAE Tap and Die Set",
+      "Magnetic Bowl",
+      "Anti-Fatigue Foam Mat Set"
     ]
   }
 }
